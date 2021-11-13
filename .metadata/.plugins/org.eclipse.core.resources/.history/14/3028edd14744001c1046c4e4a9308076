@@ -1,0 +1,10 @@
+package B3_연산자_기본이론;
+
+public class B3_기본이론2_짝수홀수 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
