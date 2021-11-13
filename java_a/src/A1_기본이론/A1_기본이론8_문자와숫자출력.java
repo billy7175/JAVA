@@ -1,0 +1,24 @@
+package A1_기본이론;
+
+public class A1_기본이론8_문자와숫자출력 {
+	public static void main(String[] args) {
+		System.out.printf("%d * %d =  %d", 10, 3, 10*3 );
+		System.out.printf("%.2f / %.1f = %.3f", 10.0,3.0,10.0/3);
+		System.out.println();
+		System.out.printf("김밥 %d 개 + 오뎅 %d 개 = %d 원", 3,2,2000);
+		//----------------------------------------------------------------
+		System.out.println();
+		System.out.println("----------------------------------------");
+		System.out.println(10.3 + 3);
+		System.out.println("abc " + 10);
+		
+		// 연산자 우선순위
+		// 1) () 소괄호
+		// 2) * / %
+		// 3) +-
+		System.out.println("-------------------------");
+		System.out.println("김밥가격 : " + 1000 + 300);
+		System.out.println("김밥가격 : " + (1000 + 300));
+		System.out.println("오뎅가격 : "+ 1000 * 3);
+	}
+}

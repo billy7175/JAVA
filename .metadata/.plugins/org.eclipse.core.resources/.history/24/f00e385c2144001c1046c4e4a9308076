@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package A1_기본이론;
+
+/**
+ * @author Administrator
+ *
+ */
+public class A1_기본이론5_자료형 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
