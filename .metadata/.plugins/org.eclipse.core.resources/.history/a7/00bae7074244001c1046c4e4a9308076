@@ -1,0 +1,16 @@
+package B2_변수_알고리즘_LV1;
+
+public class B2_놀이공원_문제 {
+	/*
+	  [문제]
+		   철수는 놀이공원에 갔습니다. 
+		   놀이공원 입장료는 15000원 입니다.
+		   철수는 이런저런 할인을 받아서 9000원에 입장했습니다.
+		   몇 % 할인받은것일까요?
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

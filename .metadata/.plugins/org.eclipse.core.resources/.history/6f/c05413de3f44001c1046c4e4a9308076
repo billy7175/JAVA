@@ -1,0 +1,7 @@
+package B1_변수_기본이론;
+
+public class B1_기본이론6_변수의크기와종류 {
+	public static void main(String[] args) {
+		// 저우의 종류는 여러가지
+	}
+}
