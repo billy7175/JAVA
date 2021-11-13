@@ -11,7 +11,7 @@ public class B2_자전거_문제 {
 		double 총거리 = 23/30.0;
 		System.out.println(총거리);
 		double 일분 = 총거리 / 7;
-		System.out.printf("일분동안 간 거리 : %.2f km", 일분);
+		System.out.printf("%.2f", 일초);
 	}
 
 }
