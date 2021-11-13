@@ -1,0 +1,14 @@
+package B7_입력_알고리즘_LV1;
+
+public class B7_더하기_문제 {
+	/*		 
+	  [문제] 
+	  		숫자 2개를 입력받고 그합을 구하시오.
+	  		(예) 3, 5 ==> 8
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

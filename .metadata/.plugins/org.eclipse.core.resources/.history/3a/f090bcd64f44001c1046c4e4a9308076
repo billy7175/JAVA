@@ -1,0 +1,14 @@
+package B3_연산자_기본이론;
+
+import java.util.Scanner;
+public class B3_기본이론4_입력 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("숫자를 입력 : ");
+		int a = scan.nextInt();
+		System.out.println("입력하신 값은 : "+a);
+	}
+
+}
