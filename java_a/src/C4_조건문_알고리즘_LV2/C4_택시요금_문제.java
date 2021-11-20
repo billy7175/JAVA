@@ -25,6 +25,8 @@ public class C4_택시요금_문제 {
 			System.out.println("택시요금 : " + (기본요금 + (추가요금수 * 2300)));
 			
 		}
+		
+		scan.close();
 	}
 
 }

@@ -23,6 +23,7 @@ public class B7_로그인_문제 {
 		System.out.println("비밀번호를 입력 : ");
 		int userPw = scan.nextInt();
 		System.out.println("입력하신 PW : " + userPw);
+		scan.close();
 	}
 
 }

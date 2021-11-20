@@ -29,6 +29,7 @@ public class C3_기본이론2_중첩조건문 {
 				System.out.println("올바른 비밀번호를 입력해주세요.");
 			}
 		}
+		scan.close();
 	}
 
 }

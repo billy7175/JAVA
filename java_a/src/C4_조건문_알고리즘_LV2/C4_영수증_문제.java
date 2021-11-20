@@ -45,7 +45,7 @@ public class C4_영수증_문제 {
 		}
 		
 		System.out.println("------ 감 사 합 니 다 ----------");
-		
+		scan.close();
 	}
 
 }

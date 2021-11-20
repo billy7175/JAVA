@@ -32,6 +32,8 @@ public class C2_가입_문제 {
 		if(signup_id != login_id || signup_password != longin_password ) {
 			System.out.println("올바른 정보를 입력해주세요.");
 		}
+		
+		scan.close();
 	}
 
 }

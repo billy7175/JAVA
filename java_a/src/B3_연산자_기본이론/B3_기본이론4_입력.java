@@ -13,6 +13,7 @@ public class B3_기본이론4_입력 {
 		int a = scan.nextInt();
 		System.out.println("입력하신 값은 : "+a);
 		
+		scan.close();
 		// scan.close(); [3] close를 해서 사용종료를 알린다.;
 	}
 
