@@ -1,0 +1,14 @@
+package C2_조건문_알고리즘_LV1;
+import java.until.Scanner;
+public class C2_가입_문제 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int signup_id =0;
+		int signup_password = 0;
+		int login_id = 0;
+		int longin_password = 0;
+		
+	}
+
+}
