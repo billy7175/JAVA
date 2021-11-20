@@ -22,8 +22,6 @@ public class C5_기본이론1_랜덤 {
 		// [1] 숫자 2개 1~9를 FOSEJADMFH 저장하고, 출력한다.
 		// ==> 3 x 5
 		// [2] 정답을 입력하고 그 결과가 위 문제와 일치하면 "정답", 틀리면 "오답"
-//		int firstNum = random.nextInt(10);
-//		int secondNum = random.nextInt(10);
 		int firstNum = random.nextInt(9)+1;
 		int secondNum = random.nextInt(9)+1;
 		int answer = firstNum * secondNum;
