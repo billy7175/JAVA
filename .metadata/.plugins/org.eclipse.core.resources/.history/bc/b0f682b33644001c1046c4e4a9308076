@@ -1,8 +1,0 @@
-package A1_기본이론;
-
-public class A1_기본이론8_문자와숫자출력 {
-	public static void main(String[] args) {
-		System.out.printf("%d * %d =  %d", 10, 3, 10*3 );
-		System.out.printf("%f / %f = %f", 10,0,3.0,10.0/3);
-	}
-}
