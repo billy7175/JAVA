@@ -2,16 +2,16 @@
 <launchHistory>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
         <mruHistory>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론5_문자열함수&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론3_문자열비교2&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론2_문자열비교1&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론1_문자열입력1&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열8_기본이론0_메모리구조2&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_알고리즘_삼각형그리기_문제&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;Tomcat v9.0 Server at localhost (2)&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;__03_request__03_01_request.jsp (1)&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;Tomcat v9.0 Server at localhost&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;__03_request__03_01_request.jsp&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론4_2차원정렬&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론3_상수&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론2_ui개선&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론1_2차원배열&quot;/&gt;&#13;&#10;"/>
         </mruHistory>
         <favorites/>
     </launchGroup>
@@ -26,16 +26,16 @@
     </launchGroup>
     <launchGroup id="org.eclipse.eclemma.ui.launchGroup.coverage">
         <mruHistory>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론5_문자열함수&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론3_문자열비교2&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론2_문자열비교1&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론1_문자열입력1&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열8_기본이론0_메모리구조2&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_알고리즘_삼각형그리기_문제&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론4_2차원정렬&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론3_상수&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론2_ui개선&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론1_2차원배열&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열3_알고리즘_정렬&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열3_기본이론3_중첩반복문과배열&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열3_기본이론1_2차원반복문&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열2_프로젝트_1to4게임_문제&quot;/&gt;&#13;&#10;"/>
         </mruHistory>
         <favorites/>
     </launchGroup>
@@ -45,16 +45,16 @@
     </launchGroup>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
         <mruHistory>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론5_문자열함수&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론3_문자열비교2&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론2_문자열비교1&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;문자열1_기본이론1_문자열입력1&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열8_기본이론0_메모리구조2&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_알고리즘_삼각형그리기_문제&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;Tomcat v9.0 Server at localhost (2)&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;__03_request__03_01_request.jsp (1)&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;Tomcat v9.0 Server at localhost&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;__03_request__03_01_request.jsp&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론4_2차원정렬&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론3_상수&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론2_ui개선&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;배열5_기본이론1_2차원배열&quot;/&gt;&#13;&#10;"/>
         </mruHistory>
         <favorites/>
     </launchGroup>
