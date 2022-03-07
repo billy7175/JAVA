@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Hellojava&apos; to &apos;Ex01Hellojava&apos;&#x0D;&#x0A;- Original project: &apos;examples-a&apos;&#x0D;&#x0A;- Original element: &apos;Hellojava&apos;&#x0D;&#x0A;- Renamed element: &apos;Ex01Hellojava&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Hellojava&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Hellojava.java[Hellojava" matchStrategy="1" name="Ex01Hellojava" qualified="false" references="true" similarDeclarations="false" stamp="1646310914711" textual="false" version="1.0"/>
+</session>
