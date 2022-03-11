@@ -17,7 +17,7 @@ public class Ex05Array {
 		}
 		
 		for (int i = 0; i < 10; i++) { // 1 : 0 ~ 9
-			System.out.printf("%d번째 데이터 : %d\n", i, ar[i]);
+			System.out.printf("%d번째 []데이터 : %d\n", i, ar[i]);
 		}
 		
 		System.out.println("============================");
