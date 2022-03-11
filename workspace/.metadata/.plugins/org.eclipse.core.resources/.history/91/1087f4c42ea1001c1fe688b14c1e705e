@@ -79,19 +79,9 @@ public class Ex05Array {
 			System.out.println();
 		}
 		
-		Color color;
-		color = Color.Green;
-		System.out.println(color);
-		
 
 	}
 
-}
-
-enum Color {
-	Red,
-	Green,
-	Blue
 }
 
 
