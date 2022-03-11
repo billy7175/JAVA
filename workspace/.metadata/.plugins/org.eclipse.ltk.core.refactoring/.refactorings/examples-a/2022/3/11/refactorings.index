@@ -1,3 +1,6 @@
 1646997129345	Copy compilation unit
 1646997143209	Delete element
 1646997149834	Copy compilation unit
+1647001206515	Copy compilation unit
+1647001570606	Extract method 'showNumbers'
+1647001735271	Extract method 'selectBasicNumbers'
