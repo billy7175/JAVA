@@ -17,6 +17,7 @@ class Employee2 {
 			System.out.println("잘못된 값입니다...");
 		}
 	}
+	
 	public String getName() {
 		return name;
 	}
@@ -29,7 +30,8 @@ class Employee2 {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	
+	
 	//public : 외부에서 자유롭게 접근할 수 있는 멤버
 	public String info() {
 		//String.format : System.out.printf 과 동일한 형식으로 사용하되 문자열만 만들고 출력 기능은 빠진 메서드

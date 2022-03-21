@@ -39,7 +39,7 @@ public class Ex01OOP4 {
 //		e1.author = "홍길동";
 //		e2.author = "김윤석";
 //		System.out.println(e1.author);
-		//static 멤버는 인스턴스 참조 변수가 아니라 클래스 이름으로 접급하는 것이 좋습니다.
+		//static 멤버는 인스턴스 참조 변수가 아니라 클래스 이름으로 접급하는 것이 좋습니다. 해야한다
 		System.out.println(Employee4.author);
 		
 		System.out.println("======================");

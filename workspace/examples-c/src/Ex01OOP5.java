@@ -11,7 +11,7 @@ class Constants {
 	public Constants() {
 		x1 = 100; 
 		// x2 = 200;	// final field는 생성자에서 값 저장 가능 (필드 초기화를 한 경우 오류)
-		// x3 = 300;	// static final field는 생성자에서 값 저정 가능
+		// x3 = 300;	// static final field는 생성자에서 값 저정 불가능
 	}
 	
 	void m() {

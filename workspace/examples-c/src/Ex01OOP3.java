@@ -3,6 +3,7 @@
 //         사용자 정의 자료형 ( 참조형 )
 class Employee3 {
 	
+	//Field 초기화 field initialization
 	public int empNo = 10;
 	public String name = "No Name";
 	public String email = "Unknown";	
@@ -32,6 +33,7 @@ class Employee3 {
 		return info;
 	}
 }
+
 public class Ex01OOP3 {
 
 	public static void main(String[] args) {
@@ -45,6 +47,8 @@ public class Ex01OOP3 {
 		// 클래스 사용 : 클래스 타입의 변수 만들기 + 데이터 저장/읽기 + 기능 호출
 		Employee3 emp;			// 참조 변수 만들기		
 		emp = new Employee3();	// 전달인자 없는 생성자 메서드 호출 ( new Employee3() : 생성자 호출 구문 )
+		System.out.println(emp);
+		System.out.println("=========");
 		
 		Employee3 emp2;
 		emp2 = new Employee3(2, "송강호", "skh@example.com"); // 전달인자 3개인 생성자 메서드 호출
@@ -53,8 +57,8 @@ public class Ex01OOP3 {
 		System.out.println(empInfo);
 
 	}
-
 }
+
 
 
 
