@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Input & Form</title>
+</head>
+<body>
+
+    <form action="" method="POST">
+        <input type="hidden" 
+               name="hiden_data" id="iamhidden"
+               value="hidden">       
+        <table border="1" align="center" style="width:700px">
+            <caption><h1>회원 가입</h1></caption>
+            <tr>
+                <th style="width:150px;height:50px">아이디</th>
+                <td style="padding-left:10px">
+                    <input type="text" id="id" name="id" style="width:500px">
+                </td>
+            </tr>
+            <tr>
+                <th style="width:150px;height:50px">패스워드</th>
+                <td style="padding-left:10px">
+                    <input type="password" name="passwd"" style="width:500px">
+                </td>
+            </tr>
+            <tr>
+                <th style="width:150px;height:50px">이메일</th>
+                <td style="padding-left:10px">
+                    <input type="text" name="email1" style="width:150px">
+                    @
+                    <select style="width:150px" name="email2">
+                        <option>gmail.com</option>
+                        <option>daum.net</option>
+                        <option>naver.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th style="width:150px;height:50px">생년월일</th>
+                <td style="padding-left:10px">
+                    <input type="date" name="birthdate" style="width:300px">
+                </td>
+            </tr>
+            <tr>
+                <th style="width:150px;height:50px">성별</th>
+                <td style="padding-left:10px">
+                    <input type="radio" name="gender" value="male" checked>남
+                    <input type="radio" name="gender" value="female">여
+                </td>
+            </tr>
+            <tr>
+                <th style="width:150px;height:50px">취미</th>
+                <td style="padding-left:10px">
+                    <input type="checkbox" name="hobby" value="book">독서
+                    <input type="checkbox" name="hobby" value="movie">영화
+                    <input type="checkbox" name="hobby" value="travel">여행
+                    <input type="checkbox" name="hobby" value="sports">운동
+                    <input type="checkbox" name="hobby" value="game">게임
+                </td>
+            </tr>
+            <tr>
+                <th style="width:150px;height:50px">프로필사진</th>
+                <td style="padding:10px">
+                    <input type="file" name="picture" style="width:400px">
+                </td>
+            </tr>
+            <tr>
+                <th style="width:150px;height:50px">가입인사</th>
+                <td style="padding:10px">
+                    <textarea name="greetings" 
+                              cols="70" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;height:50px" 
+                    colspan="2">
+                    <input type="submit" value="가입"
+                           style="width:100px;height:40px">
+                    <input type="image"
+                           style="width:100px;height:40px">
+                    <input type="button" value="가입"
+                           style="width:100px;height:40px">
+                    <input type="reset" value="다시입력"
+                           style="width:100px;height:40px">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
