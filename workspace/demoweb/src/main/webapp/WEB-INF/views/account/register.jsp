@@ -46,7 +46,8 @@
 		        <div class="inputsubtitle">회원기본정보</div>
 
 		        <form id="registerform" 
-		        	  action="/demoweb/account/register.action" method="post">
+		        	  action="/demoweb/account/register.action" 
+		        	  method="post">
 		        <table>
 		            <tr>
 		                <th>아이디(ID)</th>
