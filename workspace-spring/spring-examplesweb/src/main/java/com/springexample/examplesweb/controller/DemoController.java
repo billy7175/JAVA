@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -36,6 +37,18 @@ public class DemoController {
 
 	@GetMapping(path= {"/demo/param"})
 	public String proccessGetRequest(@RequestParam(name="data1") String data3, @RequestParam(name="data2")String data4) {
+
+		System.out.println(data3 + data4);
+		
+		//View(.jsp)로 이동
+		return "demo/result"; // --> WEB-INF/views/+demo.result.jsp
+	}
+	///////
+	
+	
+//	Post + DTO 객체로
+	@PostMapping(path= {"/demo/param"})
+	public String proccessPostRequest() {
 
 		System.out.println(data3 + data4);
 		
