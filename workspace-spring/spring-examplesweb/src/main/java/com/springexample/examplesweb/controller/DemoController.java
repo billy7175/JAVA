@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.springexample.examplesweb.vo.Person;
+
 @Controller
 public class DemoController {
 // 1. GET 방식 요청 처리 + HttpServletRequest 객체를 사용해서 데이터 읽기
@@ -48,11 +50,12 @@ public class DemoController {
 	
 //	Post + DTO 객체로
 	@PostMapping(path= {"/demo/param"})
-	public String proccessPostRequest() {
+	public String proccessPostRequest(Person person) {
 
-		System.out.println(data3 + data4);
+//		System.out.println(data3 + data4);
 		
 		//View(.jsp)로 이동
+		System.out.println(person.getName() + person.getEmail());
 		return "demo/result"; // --> WEB-INF/views/+demo.result.jsp
 	}
 
