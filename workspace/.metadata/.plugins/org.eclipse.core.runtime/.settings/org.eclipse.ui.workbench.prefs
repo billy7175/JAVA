@@ -2,7 +2,10 @@
 //org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
+<<<<<<< HEAD
 org.eclipse.jdt.ui.ColoredLabels.match_highlight=206,92,0
+=======
+>>>>>>> b7365871667a5aa8d0ee6aa6376bc91e3f2a38a9
 org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_END=41,41,41
 org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=43,44,45
 org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_TEXT_COLOR=204,204,204
