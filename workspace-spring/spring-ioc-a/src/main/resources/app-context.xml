@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						https://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context 
+						https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<description>Example configuration to get you started.</description>
+	
+	<!-- Spring IoC Container (객체 관리 컨테이너)에 객체 등록 -->
+	<!-- MyServiceConsumer serviceConsumer = new MyServiceConsumer(); -->
+	<bean id="serviceConsumer" class="com.springexample.ioc.MyServiceConsumer">
+		<!--  serviceConsumer.setMessageService(messageService); -->
+		<property name="messageService" ref="messageService" />
+		<!--  serviceConsumer.setTimeService(timeService); -->
+		<property name="timeService" ref="timeService" />
+	</bean>
+	
+	<bean id="messageService" class="com.springexample.ioc.MyMessageService">
+	</bean>
+	
+	<bean id="timeService" class="com.springexample.ioc.MyTimeService">
+	</bean>
+
+	
+</beans>

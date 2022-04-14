@@ -20,4 +20,6 @@
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 </section>
