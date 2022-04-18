@@ -8,7 +8,7 @@
 	<div style="padding-left:20px">
 		<h2>Spring MVC Controller Demo</h2>
 		
-		<h3>1. <a href="demo/param?data1=this%20is%20test%20data&data2=100">Process Request Parameter(GET)</a></h3>
+		<h3>1. <a href="demo/param?data1=this%20is%20test%20data&data2=100">Process Request Parameter (GET)</a></h3>
 		<h3>2. Process Request Parameter (POST)</h3>
 		<form action="demo/param" method="post">
 			이름 : <input type="text" name="name" value="홍길동" /><br />
