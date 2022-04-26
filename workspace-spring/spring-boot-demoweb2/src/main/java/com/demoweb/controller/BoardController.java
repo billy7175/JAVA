@@ -83,6 +83,7 @@ public class BoardController {
 				
 				attachments.add(attachment);
 			} catch (Exception ex) {				
+				ex.printStackTrace();
 			}
 		}
 		
