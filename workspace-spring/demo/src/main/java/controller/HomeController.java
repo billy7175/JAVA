@@ -17,5 +17,5 @@ public class HomeController {
 //		return 'Hello, Spring Boot Web Application';
 //	}
 	
-	@GetMapping
+
 }

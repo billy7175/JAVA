@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<!-- namespace : package-name.class-name -->
+<mapper namespace="com.demoweb.mapper.MemberMapper">
+	
+	<!-- SQL과 Object 매핑 -->
+	<!-- 
+		SQL    : #{ propertyName }, #{ propertyName } ... propertyName : 클래스.getPropertyName()
+		Object : 클래스
+	-->
+	<!-- id : MethodName -->
+	<!-- <insert id="insertMember" parameterType="com.demoweb.vo.Member"> -->
+	<insert id="insertMember" parameterType="Member">
+		INSERT INTO member 
+		(
+			memberid, 
+			passwd, 
+			email
+		) 
+		VALUES 
+		(
+			#{ memberId }, 
+			#{ passwd }, 
+			#{ email }
+		)
+	</insert>
+	
+	<!-- 
+	       Member.setM_memberId(), member.setM_email()
+	SELECT m_memberId,             m_email, ...
+	FROM Member
+	-->
+	
+	<select id="selectMembers" resultType="Member">
+		SELECT 
+			memberId, 
+			email, 
+			userType, 
+			active, 
+			regDate 
+		FROM 
+			member
+	</select>
+	
+	<select id="selectMemberById" parameterType="string" 
+								  resultType="Member">
+		SELECT 
+			memberId, 
+			email, 
+			userType, 
+			active, 
+			regDate 
+		FROM 
+			member 
+		WHERE 
+			memberid = #{ memberId }
+	</select>
+	
+	<!-- 
+		resultMap : 객체와 SQL 사이의 매핑을 정의하는 요소
+				    주로 자료형의 불일치, 이름의 불일치 등을 해결하기 위한 도구
+	-->
+	<resultMap type="Member" id="memberMap">
+		<id column="memberid" property="memberId" /> <!-- 조회 컬럼과 객체의 set메서드를 매핑 -->
+		<result column="email" property="email" />
+		<result column="usertype" property="userType" />
+		<result column="regdate" property="regDate" />
+		<result column="active" property="active" />
+	</resultMap>
+	
+	<!-- 
+	parameter-type : hashmap => 2개 이상의 데이터를 vo 없이 사용하는 방법
+	-->
+	<select id="selectMemberByIdAndPasswd" parameterType="hashmap"
+										   resultMap="memberMap">
+		SELECT 
+			memberid, 
+			email, 
+			usertype, 
+			regdate, 
+			active
+		FROM 
+			member
+		WHERE 
+			memberid = #{ memberId } 
+			AND 
+			passwd = #{ passwd }
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.demoweb.mapper.CommentMapper">
+
+	<insert id="insertComment" parameterType="BoardComment"
+			useGeneratedKeys="true" keyColumn="commentno" keyProperty="commentNo">
+		INSERT INTO boardcomment
+		(
+			boardno, 
+			writer, 
+			content,
+			groupno,
+			step,
+			depth
+		)
+		VALUES 
+		(			 
+			#{ boardNo }, 
+			#{ writer }, 
+			#{ content },
+			#{ groupNo },
+			#{ step },
+			#{ depth }
+		)
+	</insert>
+	<update id="updateGroupNo" parameterType="BoardComment">
+		UPDATE boardcomment
+		SET groupno = #{ groupNo }
+		WHERE commentno = #{ commentNo }
+	</update>
+	
+	<update id="updateComment" parameterType="BoardComment">
+		UPDATE boardcomment
+		SET content = #{ content }
+		WHERE commentno = #{ commentNo }
+	</update>
+	
+	<delete id="deleteComment" parameterType="int">
+		UPDATE boardcomment
+		SET deleted = 1				
+		WHERE commentno = #{ commentNo }
+	</delete>
+	
+	<select id="selectCommentsByBoardNo" parameterType="int"
+										 resultType="BoardComment">
+		SELECT 
+			commentno, 
+			boardno, 
+			writer, 
+			content, 
+			regdate,
+			groupno,
+			step,
+			depth,
+			deleted
+		FROM 
+			boardcomment 
+		WHERE 
+			boardno = #{ boardNo }
+		ORDER BY 
+			groupno DESC, step ASC
+	</select>
+	
+	<select id="selectCommentByCommentNo" parameterType="int"
+											   resultType="BoardComment">
+		SELECT 
+			commentno, 
+			boardno, 
+			writer, 
+			content, 
+			regdate,
+			groupno,
+			step,
+			depth,
+			deleted
+		FROM 
+			boardcomment 
+		WHERE 
+			commentno = #{ commentNo }
+		ORDER BY 
+			groupno DESC, step ASC
+	</select>
+	
+	<update id="updateStep" parameterType="BoardComment">
+		<![CDATA[
+		UPDATE boardcomment
+		SET step = step + 1
+		WHERE groupno = #{ groupNo } AND setp > #{ step }
+		]]>
+	</update>
+
+
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.demoweb.mapper.BoardMapper">
+
+	<insert id="insertBoard" parameterType="Board" 
+		useGeneratedKeys="true" keyColumn="boardno" keyProperty="boardNo">
+		INSERT INTO board
+		(
+			title,
+			writer, 
+			content 
+		)
+		VALUES 
+		(
+			#{ title }, 
+			#{ writer }, 
+			#{ content }
+		)
+	</insert>
+	<insert id="insertBoard2" parameterType="Board">
+		<selectKey keyProperty="boardNo" order="AFTER" resultType="int">
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+		INSERT INTO board
+		(
+			title,
+			writer, 
+			content 
+		)
+		VALUES 
+		(
+			#{ title }, 
+			#{ writer }, 
+			#{ content }
+		)
+	</insert>
+	
+	<insert id="insertBoardAttach" parameterType="BoardAttach">
+		INSERT INTO boardattach
+		(
+			boardno, 
+			userfilename, 
+			savedfilename
+		) 
+		VALUES 
+		(
+			#{ boardNo }, 
+			#{ userFileName }, 
+			#{ savedFileName }
+		)
+	</insert>
+	
+	<select id="selectBoardList" parameterType="hashmap" resultType="Board">
+		SELECT 
+			boardno, 
+			title, 
+			writer,
+			regdate, 
+			readcount,
+			deleted
+		FROM		
+			board
+		ORDER BY 
+			boardno DESC
+		LIMIT #{ first }, #{ cnt }
+	</select>
+	
+	<resultMap type="Board" id="boardMap">
+		<id column="boardno" property="boardNo" />
+		<result column="title" property="title" />
+		<result column="writer" property="writer" />
+		<result column="regdate" property="regDate" />
+		<result column="readcount" property="readCount" />
+		<result column="content" property="content" />
+		<collection property="attachments" column="boardno" resultMap="attachMap" />
+		<collection property="comments" column="boardno" resultMap="commentMap" />
+	</resultMap>
+	<resultMap type="BoardAttach" id="attachMap">
+		<id column="attachno" property="attachNo" />
+		<result column="boardno" property="boardNo" />
+		<result column="userfilename" property="userFileName" />
+		<result column="savedfilename" property="savedFileName" />
+	</resultMap>
+	<resultMap type="BoardComment" id="commentMap">
+		<id column="commentno" property="commentNo" />
+		<result column="boardno" property="boardNo" />
+		<result column="bcwriter" property="writer" />
+		<result column="bccontent" property="content" />
+		<result column="bcregdate" property="regDate" />
+		<result column="groupno" property="groupNo" />
+		<result column="step" property="step" />
+		<result column="depth" property="depth" />
+		<result column="bcdeleted" property="deleted" />
+	</resultMap>
+	
+	<select id="selectBoardByBoardNo" parameterType="int"
+									  resultMap="boardMap">									 
+		SELECT 
+			b.boardno, 
+			b.title, 
+			b.writer, 
+			b.regdate, 
+			b.readcount, 
+			b.content,
+			ba.attachno, 
+			ba.userfilename, 
+			ba.savedfilename,
+			bc.commentno, 
+			bc.writer bcwriter, 
+			bc.content bccontent, 
+			bc.regdate bcregdate,
+			bc.groupno, 
+			bc.step, 
+			bc.depth,
+			bc.deleted bcdeleted
+		FROM board b
+		LEFT OUTER JOIN boardattach ba
+		ON b.boardno = ba.boardno
+		LEFT OUTER JOIN boardcomment bc
+		ON b.boardno = bc.boardno
+		WHERE b.boardno = #{ boardNo } AND b.deleted = '0'
+		ORDER BY bc.commentno DESC
+	</select>
+	
+	<resultMap type="Board" id="boardMap2">
+		<id column="boardno" property="boardNo" />
+		<result column="title" property="title" />
+		<result column="writer" property="writer" />
+		<result column="regdate" property="regDate" />
+		<result column="readcount" property="readCount" />
+		<result column="content" property="content" />
+		<collection property="attachments" column="boardno" select="selectBoardAttachByBoardNo" />
+		<collection property="comments" column="boardno" select="selectBoardCommentByBoardNo" />
+	</resultMap>
+	<select id="selectBoardByBoardNo2" parameterType="int"
+									   resultMap="boardMap2">									 
+		SELECT 
+			b.boardno, 
+			b.title, 
+			b.writer, 
+			b.regdate, 
+			b.readcount, 
+			b.content
+		FROM 
+			board b
+		WHERE 
+			b.boardno = #{ boardNo } AND b.deleted = '0'
+	</select>
+	<select id="selectBoardAttachByBoardNo" parameterType="int"
+											resultType="BoardAttach">									 
+		SELECT 
+			ba.attachno, 
+			ba.boardno,
+			ba.userfilename, 
+			ba.savedfilename
+		FROM 
+			boardattach ba
+		WHERE 
+			ba.boardno = #{ boardNo }
+	</select>
+	<select id="selectBoardCommentByBoardNo" parameterType="int"
+											 resultType="BoardComment">									 
+		SELECT
+			bc.commentno, 
+			bc.writer, 
+			bc.content, 
+			bc.regdate, 
+			bc.groupno, 
+			bc.step, 
+			bc.depth,
+			bc.deleted
+		FROM 
+			boardcomment bc
+		WHERE 
+			bc.boardno = #{ boardNo }
+		ORDER BY 
+			bc.commentno DESC
+	</select>
+	
+	<select id="selectBoardCount" resultType="int">
+		SELECT COUNT(*) FROM board
+	</select>
+	
+	<select id="selectBoardAttachByAttachNo" parameterType="int"
+											 resultType="BoardAttach">
+		SELECT 
+			attachno, 
+			boardno, 
+			savedfilename, 
+			userfilename 
+		FROM 
+			boardattach 
+		WHERE 
+			attachno = #{ attachNo }
+	</select>
+	
+	<update id="updateBoardReadCount" parameterType="int">
+		UPDATE board
+		SET readcount = readcount + 1
+		WHERE boardno = #{ boardNo }
+	</update>
+	
+	<update id="deleteBoard" parameterType="int">
+		UPDATE board
+		SET deleted = '1'
+		WHERE boardno = #{ boardNo }
+	</update>
+	
+	<update id="updateBoard" parameterType="Board">
+		UPDATE board
+		SET title = #{ title }, content = #{ content }
+		WHERE boardno = #{ boardNo }
+	</update>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
