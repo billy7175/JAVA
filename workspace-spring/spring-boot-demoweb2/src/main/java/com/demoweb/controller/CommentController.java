@@ -67,6 +67,18 @@ public class CommentController {
 		return "success";
 	}
 	
+
+//	 produces = 'application/json;charset=utf-8'
+	@GetMapping(path = {"/get-comment-list2/{boardNo}" },  produces = "application/json;charset=utf-8")
+	@ResponseBody
+	public List<BoardCommentEntity> listComment2(@PathVariable int boardNo, Model model) {
+		
+//		commentService.updateComment(comment);
+		List<BoardCommentEntity> comments = commentService.findCommentListByBoardNo(boardNo);
+		
+		return comments; // @ResponseBody + 객체 return => JSON 응답
+	}
+	
 }
 
 
