@@ -5,8 +5,6 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -21,14 +19,12 @@ public class AccountController {
 	@Qualifier("accountService")
 	private AccountService accountService;
 	
-//	@RequestMapping(value = "/register.action", method = RequestMethod.GET)
-	@GetMapping(value ="/register.action")
+	@RequestMapping(value = "/register.action", method = RequestMethod.GET)
 	public String showRegisterForm() {
 		return "account/register";
 	}
 	
-//	@RequestMapping(value = "/register.action", method = RequestMethod.POST)
-	@PostMapping(value="/register.action")
+	@RequestMapping(value = "/register.action", method = RequestMethod.POST)
 	public String register(MemberEntity member) {
 		
 		accountService.registerMemberTx(member);

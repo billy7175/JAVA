@@ -55,9 +55,8 @@ public class BoardController {
 		return "board/list";
 	}
 	
-//	@RequestMapping(value = "write.action", method = RequestMethod.GET)
-	@GetMapping(value = "write.action")
-	public String showWriteForm() {
+	@RequestMapping(value = "write.action", method = RequestMethod.GET)
+	public String writeForm() {
 		return "board/write";
 	}
 	
@@ -83,7 +82,6 @@ public class BoardController {
 				
 				attachments.add(attachment);
 			} catch (Exception ex) {				
-				ex.printStackTrace();
 			}
 		}
 		
