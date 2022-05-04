@@ -89,6 +89,8 @@ public class BoardController {
 		//boardService.writeBoard(board);
 		boardService.writeBoard2(board);
 		
+		
+		// c
 		return "redirect:list.action";
 	}
 	

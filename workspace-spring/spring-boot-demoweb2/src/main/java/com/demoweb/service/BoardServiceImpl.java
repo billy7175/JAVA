@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.demoweb.entity.BoardAttachEntity;
 import com.demoweb.entity.BoardEntity;
@@ -22,11 +23,12 @@ public class BoardServiceImpl implements BoardService {
 	}
 	
 	@Override
+	@Transactional
 	public void writeBoard2(BoardEntity board) {
 
 		boardRepository.save(board);
 		
-		//int x = 10 / 0;
+//		int x = 10 / 0;
 		
 //		//첨부파일 등록하는 구현
 //		for (BoardAttach attach : board.getAttachments()) {
