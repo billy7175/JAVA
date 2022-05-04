@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+
+	<!-- connection pool 객체 등록 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@3.35.21.229:1521:xe" />
+		<property name="username" value="demoweb" />
+		<property name="password" value="oracle" />
+	</bean>
+	
+	<!-- spring의 데이터베이스 연동 객체 등록 -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<!-- 아래 bean 설정을 통해 반환되는 객체는 SqlSessionFactoryBean이 아니고 SqlSessionFactory 객체입니다. -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis-config.xml" />
+	</bean>
+	<!-- mybatis를 래핑한 스프링 객체 -->
+	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+	
+	<!-- @Mapper annotation 대신 직접 등록하는 방식 	
+	<bean id="memberMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.demoweb.mapper.MemberMapper" />
+		<property name="sqlSessionTemplate" ref="sqlSessionTemplate" />
+	</bean>
+ 	-->
+	
+	<context:component-scan base-package="com.demoweb.dao" />
+	<context:component-scan base-package="com.demoweb.service" />
+	
+	<!-- @Mapper annotation을 찾아서 IoC 컨테이너에 등록하는 설정 -->
+	<mybatis-spring:scan base-package="com.demoweb.mapper" />
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    p { font-size: 20pt; }
+    /* 선택자1, 선택자2 : 선택자1 그리고 선택자2 선택 */
+    /* 선택자1 선택자2 : 선택자1 하위에 있는 선택자2 선택 */
+    #a p { color: red; }
+    /* 선택자1 > 선택자2 : 선택자1 1단계 하위에 있는 선택자2 선택 */
+    #a > p { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div id="b">
+            <p>스타일이 적용된 제목 1</p>
+        </div>
+        <p>스타일이 적용된 제목 2</p>
+    </div>
+    <p>스타일이 적용된 제목 3</p>
+</body>
+</html>

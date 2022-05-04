@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table align="center" border="1">
+		<tr id="rainbow">
+			<td style="width:70px;height:70px;background-color:red">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:orange">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:yellow">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:green">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:blue">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:navy">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:purple">&nbsp;</td>
+		</tr>
+		<tr id="canvas">
+			<td colspan="7" style="height:400px">&nbsp;</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">	
+	/* 
+	$('#rainbow td').on("mouseover", function(event) {
+		$('#canvas td').css("background-color", 
+							$(this).css("background-color")); // this : 현재 이벤트 발생 객체
+	});
+	$('#rainbow td').on("mouseout", function(event) {
+		$('#canvas td').css("background-color", ""); 
+	}); 
+	*/
+	
+	$('#rainbow td').hover(
+		function(event) { // mouseover or mouseenter 이벤트 처리 함수
+			$('#canvas td').css("background-color", 
+								$(this).css("background-color")); // this : 현재 이벤트 발생 객체
+		},
+		function(event) { // mouseout or mouseleave 이벤트 처리 함수
+			$('#canvas td').css("background-color", "");
+		}
+	);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+﻿1. OS 설치 -> Update (생략)
+
+2. Microsoft Security Essentials  (0)
+
+3. Web Browser -> Chrome
+
+4. 문서편집기 -> Notepad++ (0)
+
+5. JDK 설치 (자바 개발자 도구)
+
+   -> JAVA_HOME 환경변수 등록
+
+   -> Path 환경변수에 %JAVA_HOME%\bin 등록
+
+6. eclipse 설치 (다운로드 및 압축 해제)
+
+7. eclipse 실행 및 workspace 가져오기
+
+---------------------------------------------------
+
+ms office, 한컴오피스, pdf reader, bandizip 등의 프로그램은 
+
+기본 설치된 상태이지만 확인 후 필요한 경우 설치해 주세요.

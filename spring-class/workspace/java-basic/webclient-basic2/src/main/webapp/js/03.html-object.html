@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table align="center" border="1">
+		<tr id="rainbow">
+			<td style="width:70px;height:70px;background-color:red">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:orange">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:yellow">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:green">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:blue">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:navy">&nbsp;</td>
+			<td style="width:70px;height:70px;background-color:purple">&nbsp;</td>
+		</tr>
+		<tr id="canvas">
+			<td colspan="7" style="height:400px">&nbsp;</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+	/* 
+	var tds = document.querySelectorAll('#rainbow td') // 여러 개를 선택하는 함수
+	for (var i = 0; i < tds.length; i++) {
+		tds[i].addEventListener("click", function(event) {
+			var td = event.target; // 이벤트를 발생시킨 객체
+			// alert(td.style.backgroundColor);
+			var canvasTd = document.querySelector('#canvas td');
+			canvasTd.style.backgroundColor = td.style.backgroundColor;
+		});
+	} 
+	*/
+	
+	var tds = document.querySelectorAll('#rainbow td') // 여러 개를 선택하는 함수
+	for (var i = 0; i < tds.length; i++) {
+		tds[i].addEventListener("mouseover", function(event) {
+			var td = event.target; // 이벤트를 발생시킨 객체
+			var canvasTd = document.querySelector('#canvas td');
+			canvasTd.style.backgroundColor = td.style.backgroundColor;
+		});
+		tds[i].addEventListener("mouseout", function(event) {
+			var canvasTd = document.querySelector('#canvas td');
+			canvasTd.style.backgroundColor = "";
+		});
+	}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

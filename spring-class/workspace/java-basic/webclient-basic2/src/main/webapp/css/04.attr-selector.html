@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    p { font-size: 20pt; }
+    /* data-attr 속성이 있는 p */
+    p[data-attr] { color: red; } 
+    /* data-attr 속성의 값이 abc인 p */
+    p[data-attr=abc] { font-weight: bold; } 
+    /* data-attr 속성의 값이 abc로 시작하는 p */
+    p[data-attr^=abc] { font-style: italic; } 
+    /* data-attr 속성의 값이 d로 끝나는 p */
+    p[data-attr$=d] { background-color: palegreen; } 
+    /* data-attr 속성의 값에 b가 포함된 p */
+    p[data-attr*=b] { text-decoration: underline; } 
+    </style>
+</head>
+<body>
+
+    <p id="a" class='x'>스타일이 적용된 요소 1</p>
+    <!-- data-??? : 사용자 정의 속성 -->
+    <p id="b" class='x' data-attr>스타일이 적용된 요소 2</p>
+    <p id="c" class='x' data-attr="abc">스타일이 적용된 요소 3</p>
+    <p id="d" class='x' data-attr="abcd">스타일이 적용된 요소 4</p>
+    <p id="e" class='x' data-attr="xyzd">스타일이 적용된 요소 5</p>
+    <p id="f" class='x'>스타일이 적용된 요소 6</p>
+
+</body>
+</html>

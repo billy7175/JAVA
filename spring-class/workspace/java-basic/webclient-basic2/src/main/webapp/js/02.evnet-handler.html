@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<button id="btn">클릭해주세요!!!</button>
+	<button id="btn2">클릭해주세요!!!</button>
+	<hr>
+	<div id="message"></div>
+
+	<script type="text/javascript">
+	function clickHandler(event) {
+		var message = document.querySelector('#message');
+		message.innerHTML = new Date().toString();
+	}
+	
+	var f = clickHandler; // 자바스크립에서는 함수를 변수에 저장할 수 있습니다. (변수가 함수처럼 동작)
+	
+	var btn = document.querySelector('#btn'); // 객체 찾기
+	// btn.addEventListener("click", clickHandler); // 객체에 이벤트 처리 함수 등록
+	btn.addEventListener("click", f); // 객체에 이벤트 처리 함수 등록 (함수가 저장된 변수 등록)
+	
+	/////////////////////////////
+	
+	var btn2 = document.querySelector('#btn2'); // 객체 찾기
+	btn2.addEventListener('click', 
+						  function(event) {
+							var message = document.querySelector('#message');
+							message.innerHTML = new Date().toString();
+						  }
+	);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
