@@ -18,13 +18,9 @@ import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
 @PropertySource("classpath:/application.properties")
-@EnableTransactionManagement // 어노테이션 기반 트랜잭션 관리 활성화
+// @EnableTransactionManagement // 어노테이션 기반 트랜잭션 관리 활성화
 public class DatabaseConfig {
 	
-	@Bean
-	public PlatformTransactionManager transactionManager() {
-		return new DataSourceTransactionManager(dataSource());
-	}
 	
 	@Bean
 	@ConfigurationProperties(prefix="spring.datasource.hikari")
